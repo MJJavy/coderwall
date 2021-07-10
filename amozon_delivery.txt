@@ -1,0 +1,79 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'deliveryPlan' function below.
+     *
+     * The function is expected to return a 2D_INTEGER_ARRAY.
+     * The function accepts following parameters:
+     *  1. 2D_INTEGER_ARRAY allLocations
+     *  2. INTEGER numDeliveries
+     */
+
+    public static List<List<Integer>> deliveryPlan(List<List<Integer>> allLocations, int numDeliveries) {
+    // Write your code here
+     return null;
+    }
+
+}
+
+public class Solution {
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int allLocationsRows = Integer.parseInt(bufferedReader.readLine().trim());
+        int allLocationsColumns = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<List<Integer>> allLocations = new ArrayList<>();
+
+        IntStream.range(0, allLocationsRows).forEach(i -> {
+            try {
+                allLocations.add(
+                    Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                        .map(Integer::parseInt)
+                        .collect(toList())
+                );
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+        int numDeliveries = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<List<Integer>> result = Result.deliveryPlan(allLocations, numDeliveries);
+
+        result.stream()
+            .map(
+                r -> r.stream()
+                    .map(Object::toString)
+                    .collect(joining(" "))
+            )
+            .map(r -> r + "\n")
+            .collect(toList())
+            .forEach(e -> {
+                try {
+                    bufferedWriter.write(e);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            });
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
