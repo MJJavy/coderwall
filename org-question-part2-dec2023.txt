@@ -1,0 +1,53 @@
+-convert list of integer to array in java
+
+-Java Program to Print Next Greater Element in Array
+-wap to array that has the next greater element for each element in the input array in java
+
+-what is JMS gateway support
+-what is JMS template
+-what is Apache ActiveMQ in java
+
+-sprigboot uses a template class behind the access code for which java database connectivity in the springboot frame
+ANS_  JdbcTemplate
+
+-springboot proivdes the feature of caching to enhance the performace of an application.Identify the correct special annotation you should define at the method level to do this
+ANS-  @EnableCaching. 
+
+-how to place multiple services in appication yml for springboot application
+-how to ask multiple service mention in yml file for microservices
+
+-How to ask Spring Cloud Config server to checkout configuration from specific branch?
+
+ANS_ cloud: 
+    config: 
+      server: 
+        git: 
+          uri: https://xyz@bitbucket.org/xyz/microservices-configs.git
+          username: xyz
+          password: xyz
+          basedir: target/configs
+
+-Git: address:https:// place in yml file for microservices
+-How to mention GIt entry in application yml file
+
+-The following code is based on the domain model used in microservices.Complete the Code
+
+-MICROSERVICE
+=https://medium.com/design-and-tech-co/implementing-domain-driven-design-for-microservice-architecture-26eb0333d72e
+=https://semaphoreci.com/blog/domain-driven-design-microservices
+		  
+-which of the following are not legal java identifiers
+
+-How to convert int[] into List<Integer> in Java? (convert int array to list of integers java)
+
+Ans-
+
+int[] array = {1, 2, 3, 4, 5};
+    List<Integer> list = Arrays.stream(array)
+        .mapToObj(Integer::valueOf)
+        .collect(Collectors.toList());
+    System.out.println(list);		  
+	
+-	is serviceList use in application yml file for microservices?
+
+	

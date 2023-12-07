@@ -1,0 +1,106 @@
+-
+maptodouble in java 8
+Ans-mapToDouble. Returns a DoubleStream consisting of the results of applying the given function to the elements of this stream. This is an intermediate operation.
+
+
+-differnce between @BeforeEach and @BeforeAll is
+Ans-@BeforeAll is used to signal that the annotated method should be executed before all tests in the current test class. In contrast to @BeforeEach methods, @BeforeAll methods are only executed once for a given test class.
+
+-which of the following method of assertions class checks if two object references point to the sam object?
+Ans- void assertSame(object1, object2)
+
+-
+which one is not a valid junit assumption method
+
+-can you autowire byType when morethan one bean with the same type exists?
+Ans-Lets a property be autowired if exactly one bean of the property type exists in the container. If more than one exists, a fatal exception is thrown, which indicates that you may not use byType autowiring for that bean.
+
+-with local transaction ,the application server is involved in transaction management and it can help ensure correctness across multipe
+-which transaction manager implementation would be most appropriate to use following scenario:your spring ased application to be deployed on JEE applicatin server
+Ans- JTA transaction
+
+-is validate improper XML/JSON check for well formed input passed to a web servie method
+
+-best practice for desinging a secure spring restfull web service includes
+
+-which of the following method in resttemplate class performs an HTTP HEAD operation
+Ans-Explanation: headforHeaders() is a RestTemplate class method based on HTTP protocol request methods.
+
+-Which RestTemplate class method performs an HTTP head operation?
+Ans- 
+Http Method(HEAD) 		RestTemplate Method( HeadForHeaders(Uri url))
+Http Method(OPTIONS) 		RestTemplate Method( OptionsForAllow(Uri url))
+Http Method(POST) 		RestTemplate Method( PostForLocation<T>(Uri url, object request)) and PostForObject<T>(Uri url, object request) 
+
+-What are the methods in RestTemplate?
+Ans-
+POST		postForEntity() postForLocation() postForObject()
+PUT			put()
+PATCH		patchForObject()
+HEAD 		headForHeaders()
+
+
+-hcan we use application_json_utf8_value for rest handler method
+
+-ToIntBitFunction (JAVA8)
+Ans-The ToIntBiFunction Interface is a part of the java.util.function package which has been introduced since Java 8, to implement functional programming in Java. It represents a function which takes in two arguments of type T and U and produces an int-valued result.
+
+syntax- int applyAsInt(T t, U u)
+
+-difference between stack memory and heap memory in java
+
+-thread pools can be created by using___________-
+ans- 	Using the Executor class
+
+-what is addShutDown method in java
+ans- 
+addShutdownHook. public void addShutdownHook(Thread hook) Registers a new virtual-machine shutdown hook. The Java virtual machine shuts down in response to two kinds of events: The program exits normally, when the last non-daemon thread exits or when the exit (equivalently, System.
+
+-weak has a relationship(the contained object life cycle does not depend on the container object life cycle) in ooad is termed as
+
+-weak has a relationship in ooad is termed as
+ANS- Aggregate
+
+-how can you declare a method somemethod such that an instance of the class is nod needed to access it and all the members of the same package have access to it
+ANS_
+the method has to be static
+
+
+-loadfactor is constant then find the an element would be O(1)
+
+-choose below correct statement for a binary search tree data structure
+
+-in a heap ,element with the greatest key is always in the which node
+
+-in open/close principles of SOLID ,the software entities are open for extension but closed for
+ANS- The open-closed principle states that software entities (classes, modules, functions, and so on) should be open for extension, but closed for modification.
+
+-builder design pattern having ocp(open close principle)
+
+-what is builder pattern in java
+
+-which of the following is not true about builder design pattern
+-builder design pattern not true on which condition
+
+-which among the following are the real world examples of implementationof interpreter patter?
+ANS-Google translator
+
+-
+
+=difference between executor and executorservice
+ANS- 
+
+Executor vs ExecutorService vs Executors in Java
+
+As I told, all three classes are part of the Java 1.5 Executor framework, and it's very important for a Java programmer to learn and understand these classes to make effective use of different types of thread pools provided by Java. Let's see some key differences between Executor, ExecutorService, and Executors in Java to understand them better:
+1) One of the key differences between Executor and ExecutorService interface is that the former is a parent interface while ExecutorService extends Executor I mean, it's a sub-interface of Executor.
+2) Another important difference between ExecutorService and Executor is that Executor defines execute() method which accepts an object of the Runnable interface, while submit() method can accept objects of both Runnable and Callable interfaces.
+
+3) The third difference between Executor and ExecutorService interface is that the execute() method doesn't return any result, its return type is void but the submit() method returns the result of computation via a Future object. This is also the key difference between submit() and execute() method, which is one of the frequently asked Java concurrency interview questions.
+
+4) The fourth difference between ExecutorService and Executor interface is that apart from allowing a client to submit a task, ExecutorService also provides methods to control the thread pool e.g. terminate the thread pool by calling the shutDown() method. You should also read "Java Concurrency in Practice" to learn more about the graceful shutdown of a thread-pool and how to handle pending tasks.
+
+5) Executors class provides factory methods to create different kinds of thread pools e.g. newSingleThreadExecutor() creates a thread pool of just one thread, newFixedThreadPool(int numOfThreads) creates a thread pool of a fixed number of threads, and newCachedThreadPool() creates new threads when needed but reuse the existing threads if they are available.
+
+
+
