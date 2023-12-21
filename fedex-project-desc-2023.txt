@@ -1,0 +1,19 @@
+Customer Pickup Coordination(CPC)
+
+-Primay application interface for CPC to create,alter and manage pickup for the network.
+-Primay Users: CPC
+-Communication with on-road resource through two-way messaging , view Work Area(WA) assignments and review real time/historical pickup status.
+
+FedEx Customer Connection(FCC)
+-Primary application CSPs view and manage real time and historical pickup information.
+-Primary users: ORR and BCs
+-View pickup & delivery manifest , map pickup locations, enable proximity alerts , transfer pickups between WA's and send messages to STAR devices(accessed through MGBA)
+
+Pickup zip code data base(PZD)
+-Manage and view ground pickup services offerings by zip/postal code
+-Primary users: CPC engineering ,booking applications.
+-Reference /update cutoff and access time windows ,view source offering and view historical changes.
+
+5 pm to 7 pm
+2:30 am to 4:30 am
+
